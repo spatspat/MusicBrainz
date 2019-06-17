@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MusicBrainz.Api</name>
+    </assembly>
+    <members>
+        <member name="T:MusicBrainz.Api.Controllers.ArtistController">
+            <summary>
+            Artist API - Retrieve /Artist information
+            </summary>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ArtistController.#ctor(MusicBrainz.Api.Domain.Services.IArtistService)">
+            <summary>
+            constructor for artist controller
+            </summary>
+            <param name="artistService"></param>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ArtistController.Search(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Search artist by name and allow pagination
+            </summary>
+            <param name="search_criteria"></param>
+            <param name="page_number"></param>
+            <param name="page_size"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ArtistController.Releases(System.String)">
+            <summary>
+            Get release of artist from musicbrainz by artist id
+            </summary>
+            <param name="artistid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ArtistController.GetFirstTenAlbum(System.String,System.Nullable{System.Int32})">
+            <summary>
+            Return first ten albums of an artist by artist id
+            </summary>
+            <param name="artistid"></param>
+            <param name="numberOfAlbum"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ValuesController.Get">
+            <summary>
+            GET api/values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ValuesController.Get(System.Int32)">
+            <summary>
+            GET api/values/5
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ValuesController.Post(System.String)">
+            <summary>
+            POST api/values
+            </summary>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ValuesController.Put(System.Int32,System.String)">
+            <summary>
+            PUT api/values/5
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:MusicBrainz.Api.Controllers.ValuesController.Delete(System.Int32)">
+            <summary>
+            DELETE api/values/5
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="T:MusicBrainz.Api.Domain.Models.Artist">
+            <summary>
+            Represent the artist model
+            </summary>
+        </member>
+        <member name="P:MusicBrainz.Api.Domain.Models.Artist.ArtistId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:MusicBrainz.Api.DTO.ArtistDto">
+            <summary>
+            Artist Data Transfer Object
+            </summary>
+        </member>
+        <member name="T:MusicBrainz.Api.DTO.ReleaseDto">
+            <summary>
+            Response for the musicbrainz response
+            </summary>
+        </member>
+        <member name="T:MusicBrainz.Api.DTO.SearchArtistResultDto">
+            <summary>
+            Response of the API 
+            </summary>
+        </member>
+        <member name="T:MusicBrainz.Api.DTO.SearchReleasesDto">
+            <summary>
+            DTO object
+            </summary>
+        </member>
+    </members>
+</doc>
